@@ -53,46 +53,77 @@
     </nav>
 
     <main>
+        <!-- Hero Section Combinado - Grid Layout -->
         <section class="hero-section">
-            <div class="hero-content">
-                <h2>El Futuro no Es Verde. Es Complejo. Y lo estamos construyendo.</h2>
-                <p>Una visión audaz donde la naturaleza prospera y la mente humana evoluciona por el bien común.</p>
-            </div>
-            <div class="hero-image">
-                <img src="imgs/caidababilonia.jpeg" alt="Imagen representativa">
+            <div class="hero-container">
+                <h1 class="hero-title">El Futuro no Es Verde. Es Complejo. Y lo estamos construyendo.</h1>
+                <div class="hero-image">
+                    <img src="imgs/caidababilonia.jpeg" alt="Imagen representativa del futuro solarpunk">
+                </div>
+                <p class="hero-description">Una visión audaz donde la naturaleza prospera y la mente humana evoluciona por el bien común.</p>
+                <div class="nuestra-postura-content">
+                    <h2>Nuestra Postura</h2>
+                    <p>En SolarpunkFTZY, no buscamos la utopía fácil, sino la <strong>realidad posible</strong>. Abrazamos la sostenibilidad con un <strong>análisis crítico</strong> de sus matices, promoviendo el respeto y la apreciación genuina por la naturaleza, impulsados por una <strong>profunda filosofía</strong> de coexistencia.</p>
+                </div>
             </div>
         </section>
 
-        <section class="nuestra-postura">
-            <h2>Nuestra Postura</h2>
-            <p>En SolarpunkFTZY, no buscamos la utopía fácil, sino la <strong>realidad posible</strong>. Abrazamos la sostenibilidad con un <strong>análisis crítico</strong> de sus matices, promoviendo el respeto y la apreciación genuina por la naturaleza, impulsados por una <strong>profunda filosofía</strong> de coexistencia.</p>
-        </section>
-
+        <!-- Productos Section - CSS Grid Layout -->
         <section class="productos-destacados">
-            <h2>Objetos para la Resistencia (y el Estilo)</h2>
-            <p>Porque vestirse también es una declaración. Descubre nuestra colección de merchandising con un toque de ironía y conciencia.</p>
-            <div class="product-container">
-                <div class="product-item">
-                    <img src="imgs/caidababilonia.jpeg" alt="Merchandising Destacado 1" style="width: 25vw; height: auto; display: block; margin: 0 auto;">
-                    <h3>Camiseta "Orgánicamente Cínico"</h3>
-                    <p>Una prenda que provoca más que solo miradas.</p>
+            <div class="productos-container">
+                <div class="producto-card destacado">
+                    <div class="producto-icon">👕</div>
+                    <div class="producto-content">
+                        <h3>Objetos para la Resistencia</h3>
+                        <h2>Camiseta "Orgánicamente Cínico"</h2>
+                        <div class="producto-image">
+                            <img src="imgs/caidababilonia.jpeg" alt="Merchandising Destacado 1">
+                        </div>
+                    </div>
                 </div>
-                <div class="product-item">
-                    <img src="imgs/caidababilonia.jpeg" alt="Merchandising Destacado 2" style="width: 25vw; height: auto; display: block; margin: 0 auto;">
-                    <h3>Gorro "Consumo Consciente... ¿o no?"</h3>
-                    <p>Cubre tu cabeza, pero no tu mente crítica.</p>
+                <div class="producto-card">
+                    <div class="producto-icon">🧢</div>
+                    <div class="producto-content">
+                        <h3>Estilo Consciente</h3>
+                        <h2>Gorro "Consumo Consciente... ¿o no?"</h2>
+                        <div class="producto-image pequeña"></div>
+                    </div>
+                </div>
+                <div class="producto-card">
+                    <div class="producto-icon">🌱</div>
+                    <div class="producto-content">
+                        <h3>Merchandising</h3>
+                        <h2>Porque vestirse también es una declaración</h2>
+                        <div class="producto-image pequeña"></div>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- Artículos Section - Testimonials Style -->
         <section class="articulos">
-            <h2>Últimas Reflexiones</h2>
-            <p>Análisis profundos y noticias sobre sostenibilidad real, sin filtros ni *greenwashing*.</p>
-            <ul>
-                <li><a href="pages/bitacora.html">Artículo 1: Desmontando el Mito de los Plásticos Bio-algo</a></li>
-                <li><a href="pages/bitacora.html">Artículo 2: Solarpunk Más Allá de la Estética: ¿Es Realmente Posible?</a></li>
-                <li><a href="pages/bitacora.html">Artículo 3: La paradoja de lo "ecológico": ¿realidad o marketing?</a></li>
-            </ul>
+            <div class="articulos-container">
+                <div class="articulos-quote">
+                    <blockquote>
+                        "Análisis profundos y noticias sobre sostenibilidad real, sin filtros ni greenwashing."
+                    </blockquote>
+                    <cite>Últimas Reflexiones</cite>
+                </div>
+                <div class="articulos-grid">
+                    <div class="articulo-card">
+                        <div class="articulo-categoria">Análisis</div>
+                        <p><a href="pages/bitacora.html">Desmontando el Mito de los Plásticos Bio-algo</a></p>
+                    </div>
+                    <div class="articulo-card">
+                        <div class="articulo-categoria">Filosofía</div>
+                        <p><a href="pages/bitacora.html">Solarpunk Más Allá de la Estética: ¿Es Realmente Posible?</a></p>
+                    </div>
+                    <div class="articulo-card">
+                        <div class="articulo-categoria">Crítica</div>
+                        <p><a href="pages/bitacora.html">La paradoja de lo "ecológico": ¿realidad o marketing?</a></p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
