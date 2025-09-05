@@ -1404,6 +1404,7 @@ footer a {
   min-height: auto; /* Cambiado de 100vh a auto */
   display: flex;
   align-items: center;
+  height: auto;
 }
 
 .productos-container {
