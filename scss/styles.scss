@@ -280,18 +280,22 @@ footer a {
 
 /* Productos Section - CSS Grid Layout adaptado */
 .productos-destacados {
-  padding: 80px 24px;
+  padding: 40px 24px;
   background: linear-gradient(135deg, #f0f0e0 0%, #ffffff 100%);
   border: none;
   box-shadow: none;
+  min-height: auto; /* Cambiado de 100vh a auto */
+  display: flex;
+  align-items: center;
 }
 
 .productos-container {
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1000px; /* Reducido el ancho máximo */
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 20px;
   height: auto;
 
   .producto-card {
@@ -308,8 +312,14 @@ footer a {
   flex-direction: column;
   position: relative;
   overflow: hidden;
+  min-height: 400px; /* Altura mínima para asegurar espacio suficiente */
   
   .producto-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+
     h2, h3 {
       @extend %heading-base;
       color: $color-text;
@@ -336,9 +346,29 @@ footer a {
 }
 
 .producto-card.destacado {
-  grid-column: span 1;
+  grid-column: span 2;
+  grid-row: span 2;
   background: linear-gradient(135deg, #0077aa 0%, #005588 100%);
   color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  
+  .producto-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .producto-image {
+    flex: 1;
+    height: 400px;
+    margin: 20px;
+    
+    img {
+      padding: 30px;
+    }
+  }
 }
 
 // .producto-icon {
@@ -375,20 +405,34 @@ footer a {
 
 .producto-image {
   flex: 1;
-  background: linear-gradient(135deg, #e5e7eb, #d1d5db);
+  background: transparent;
   border-radius: 8px;
   margin-top: auto;
   overflow: hidden;
+  min-height: 200px;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  // Mantener la imagen destacada (poleratreino.webp) con configuración original
+  img[src*="poleratreino"] {
+    object-fit: contain;
+    padding: 20px;
+  }
 }
 
-.producto-image img {
-  @extend %image-responsive;
-  height: 100%;
-  margin: 0;
-}
-
-.producto-image.pequeña {
-  height: 120px;
+.producto-card.destacado .producto-image {
+  height: 400px;
+  margin: 20px;
+  
+  img {
+    padding: 30px;
+  }
 }
 
 /* Estilos para Grid de Productos (mantener compatibilidad) */
@@ -929,7 +973,7 @@ footer a {
   /* Productos grid responsive para desktop */
   .productos-container {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 300px;
+    grid-template-rows: minmax(400px, auto);
   }
   
   /* Artículos responsive para desktop */
