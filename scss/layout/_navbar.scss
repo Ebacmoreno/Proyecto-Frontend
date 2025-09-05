@@ -1,0 +1,52 @@
+.navbar {
+  min-height: 120px;
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.navbar-logo {
+  font-size: 1.8rem;
+  color: $color-white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  font-family: "Playfair Display", serif;
+  margin: 0;
+}
+
+.navbar-slogan {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: $color-white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  font-family: "Playfair Display", serif;
+  margin-top: 5px;
+}
+
+.navbar-nav {
+  .nav-link {
+    color: $color-secondary !important;
+    font-weight: normal;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+    font-family: "Playfair Display", serif;
+    margin: 0 10px;
+    
+    &:hover {
+      color: $color-white !important;
+    }
+  }
+}
+
+.navbar-toggler {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  
+  &:focus {
+    box-shadow: none;
+  }
+}

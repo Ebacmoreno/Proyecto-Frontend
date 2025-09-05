@@ -1,0 +1,30 @@
+footer {
+  background-color: $color-background-dark;
+  color: $color-text-lighter;
+  padding: 1.5rem 20px;
+  text-align: center;
+  margin-top: 40px;
+  font-family: "Playfair Display", serif;
+  font-size: 0.9rem;
+}
+
+.footer-section {
+  margin-bottom: 15px;
+}
+
+footer {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+  }
+  
+  a {
+    color: $color-secondary;
+  }
+}

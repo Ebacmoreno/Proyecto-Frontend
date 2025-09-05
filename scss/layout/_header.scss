@@ -1,0 +1,44 @@
+/* Hero Section - Centered Flex Layout adaptado */
+.hero-section {
+  padding: 80px 24px;
+  text-align: center;
+  background: $gradient-background;
+  border: none;
+  box-shadow: none;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.hero-image {
+  display: none;
+  
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: $color-text;
+  margin-bottom: 16px;
+  font-family: "Playfair Display", serif;
+}
+
+.hero-description {
+  font-size: 20px;
+  color: $color-text-light;
+  margin-bottom: 32px;
+  line-height: 1.5;
+  font-family: "Playfair Display", serif;
+}

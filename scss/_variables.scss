@@ -1,0 +1,25 @@
+// Colores principales
+$color-primary: #0077aa;
+$color-secondary: #aaddaa;
+$color-text: #333;
+$color-text-light: #666;
+$color-text-lighter: #ddd;
+$color-white: #ffffff;
+
+// Colores de fondo
+$color-background: #f0f0e0;
+$color-background-light: #ffffff;
+$color-background-dark: #333;
+
+// Colores de borde
+$color-border: #ddd;
+
+// Breakpoints
+$breakpoint-mobile: 767px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 992px;
+
+// Gradientes
+$gradient-primary: linear-gradient(135deg, #0077aa 0%, #005588 100%);
+$gradient-background: linear-gradient(135deg, #f0f0e0 0%, #ffffff 100%);
+$gradient-articles: linear-gradient(135deg, #e8e8d8 0%, #f0f0e0 100%);
